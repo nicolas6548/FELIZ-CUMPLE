@@ -28,11 +28,7 @@ const scale = (num, in_min, in_max, out_min, out_max) => {
 };
 
 // Redirección al hacer clic en el botón (configúralo luego)
-//ingresarBtn.addEventListener("click", () => {
- // window.open("cumpleaños.html", "_blank");
-//});
-
-
 ingresarBtn.addEventListener("click", () => {
-  window.open("cumpleaños.html", "_blank");
-}); //antes de finalizar descomentar el codigo de arriba que va a ser el final, y eliminar este
+window.open("cumpleaños.html");
+});
+

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="seleccion.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+  <h1>DIA 3</h1>
+  <a id="backButton" href="seleccion.html" class="back-button">
+    <i class="fas fa-arrow-left"></i> VOLVER
+  </a>
+
+  <script>
+    // Obtener el parámetro de la sección de la URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const sectionIndex = urlParams.get('section');
+    
+    // Si hay un parámetro de sección, agregarlo al enlace de volver
+    if (sectionIndex !== null) {
+      document.getElementById('backButton').href = `seleccion.html?section=${sectionIndex}`;
+    }
+  </script>
+</body>
+</html>

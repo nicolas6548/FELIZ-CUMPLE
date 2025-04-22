@@ -1,71 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-    />
-    <link rel="stylesheet" href="dia1.css" />
-    <title>Vertical Slider</title>
-  </head>
-  <body>
-    <div class="slider-container">
-      <div class="left-slide">
-        <div style="background-color: #fd3555">
-          <h1>20 AÑOS NO ES NADA</h1>
-          <p></p>
-        </div>
-        <div style="background-color: #fd3555">
-          <h1>ULTIMO DIA</h1>
-          <p>Desde el cerro (MENDOZA centro)</p>
-        </div>
-        <div style="background-color: #2a86ba">
-          <h1>MENDOZA CAPITAL</h1>
-          <p>Plaza central</p>
-        </div>
-        <div style="background-color: #252e33">
-          <h1>VIAJE A LAS MONTAÑAS</h1>
-          <p>Veremos la nieve?</p>
-        </div>
-        <div style="background-color: #ffb866">
-          <h1>VIAJE A MENDOZA</h1>
-          <p>Con un poco de frio</p>
-        </div>
-      </div>
-      <div class="right-slide">
-        <div
-          style="
-            background-image: url('./multimedia/DIA1/IMAGENES/IMG_2911.webp');
-          "
-        ></div>
-        <div
-          style="
-            background-image: url('./multimedia/DIA1/IMAGENES-OPTIMIZADO/IMG_2902B.webp');
-          "
-        ></div>
-        <div
-          style="
-            background-image: url('./multimedia/DIA1/IMAGENES-OPTIMIZADO/IMG_2902.webp');
-            "
-        ></div>
-        <div
-          style="
-            background-image: url('./multimedia/DIA3/IMAGENES/IMG_3271.JPG');
-          "
-        ></div>
-      </div>
-      <div class="action-buttons">
-        <button class="down-button">
-          <i class="fas fa-arrow-down"></i>
-        </button>
-        <button class="up-button">
-          <i class="fas fa-arrow-up"></i>
-        </button>
-      </div>
-    </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="seleccion.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+  <h1>DIA 1</h1>
+  <a id="backButton" href="seleccion.html" class="back-button">
+    <i class="fas fa-arrow-left"></i> VOLVER
+  </a>
 
-    <script src="dia1.js"></script>
-  </body>
+  <script>
+    // Obtener el parámetro de la sección de la URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const sectionIndex = urlParams.get('section');
+    
+    // Si hay un parámetro de sección, agregarlo al enlace de volver
+    if (sectionIndex !== null) {
+      document.getElementById('backButton').href = `seleccion.html?section=${sectionIndex}`;
+    }
+  </script>
+</body>
 </html>
