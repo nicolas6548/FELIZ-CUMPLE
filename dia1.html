@@ -1,27 +1,1022 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="seleccion.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-</head>
-<body>
-  <h1>DIA 1</h1>
-  <a id="backButton" href="seleccion.html" class="back-button">
-    <i class="fas fa-arrow-left"></i> VOLVER
-  </a>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
-  <script>
-    // Obtener el parámetro de la sección de la URL
-    const urlParams = new URLSearchParams(window.location.search);
-    const sectionIndex = urlParams.get('section');
-    
-    // Si hay un parámetro de sección, agregarlo al enlace de volver
-    if (sectionIndex !== null) {
-      document.getElementById('backButton').href = `seleccion.html?section=${sectionIndex}`;
-    }
-  </script>
-</body>
+    <link rel="stylesheet" href="sliderPrevia.css" />
+    <title>Slider con Texto y Videos</title>
+  </head>
+  <body>
+    <div class="slider-container">
+
+      <!-- IMAGEN 1-->
+      <div class="slide active">
+        <div class="media-container">
+          <div 
+            class="image-slide"
+            style="background-image: url('./MULTIMEDIA/DIA1/IMAGENES/01-\ dia1_avion.webp');"
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2>¿ASUSTADO?</h2>
+          <p>Para nada jajajajajaja.</p>
+        </div>
+      </div>
+      
+      <!-- VIDEO  1-->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/vP6d62ATwQg" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2>EMPIEZA LA TRAVECIA</h2>
+          <p>Vamos?.</p>
+        </div>
+      </div>
+
+      <!-- VIDEO  2-->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe width="315" height="460" src="https://www.youtube.com/embed/SW8bSaVbOhI" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2>PAPANATAS</h2>
+          <p>Me mimetice mucho con alguien jajajajaja.</p>
+        </div>
+      </div>
+
+      <!-- VIDEO  3-->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/_f5t8hxGA0I" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p>Chequeo previo.</p>
+        </div>
+      </div>
+
+      <!-- VIDEO  4-->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/d7BDE_HlMPI" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p>Tecnica de volar jajajaja.</p>
+        </div>
+      </div>
+
+      <!-- VIDEO  -->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/o9I872RXBn8" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2>VAMOS A LOS BAÑOS?</h2>
+          <p>Es mentira eso, solo en las peliculas y con 2 personas flacas (aca hay una que no es flaca jajajjaja).</p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 2-->
+      <div class="slide active">
+        <div class="media-container">
+          <div 
+            class="image-slide"
+            style="background-image: url('./MULTIMEDIA/DIA1/IMAGENES/02-dia1_avionAfuera.webp');"
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p>.</p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 3-->
+      <div class="slide active">
+        <div class="media-container">
+          <div 
+            class="image-slide"
+            style="background-image: url('./MULTIMEDIA/DIA1/IMAGENES/03-dia1_avionAfuera01.webp');"
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p>.</p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 4-->
+      <div class="slide active">
+        <div class="media-container">
+          <div 
+            class="image-slide"
+            style="background-image: url('./MULTIMEDIA/DIA1/IMAGENES/04-dia1_avionAdentro.jpeg');"
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p>.</p>
+        </div>
+      </div>
+
+      <!-- VIDEO  6-->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/of-n_lbytSs" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2>MENDOZA</h2>
+          <p>Por suerte un buen aterrizaje.</p>
+        </div>
+      </div>
+
+
+      <!-- VIDEO  7-->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/B4EcMV12cwI" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2>ENTREVISTA</h2>
+          <p>¿QUE TAL EL VUELO?.</p>
+        </div>
+      </div>
+
+
+      
+<!-- IMAGEN 5-->
+      <div class="slide active">
+        <div class="media-container">
+          <div 
+            class="image-slide"
+            style="background-image: url('./MULTIMEDIA/DIA1/IMAGENES/05-hotel.jpeg');"
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2>HOTEL</h2>
+          <p>!¡!LLEGAMOS¡!¡.</p>
+        </div>
+      </div>
+
+
+      
+<!-- IMAGEN 6-->
+      <div class="slide active">
+        <div class="media-container">
+          <div 
+            class="image-slide"
+            style="background-image: url('./MULTIMEDIA/DIA1/IMAGENES/06-hotelAfuera.jpeg');"
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2>TE AMO</h2>
+          <p></p>
+        </div>
+      </div>
+
+
+      <!-- VIDEO 8 -->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe width="315" height="460" src="https://www.youtube.com/embed/mNVGK5NiJDY" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2>REGISTRO</h2>
+          <p>MOLESTAAAAAAA.</p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 7-->
+      <div class="slide active">
+        <div class="media-container">
+          <div 
+            class="image-slide"
+            style="background-image: url('./MULTIMEDIA/DIA1/IMAGENES/07-mamucha.jpeg');"
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2>¿HACIENDOSE LA LINDA?</h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 8-->
+      <div class="slide active">
+        <div class="media-container">
+          <div 
+            class="image-slide"
+            style="background-image: url('./MULTIMEDIA/DIA1/IMAGENES/08-mamucha2.jpeg');"
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2>OBVIO</h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 9-->
+      <div class="slide active">
+        <div class="media-container">
+          <div 
+            class="image-slide"
+            style="background-image: url('./MULTIMEDIA/DIA1/IMAGENES/09-mamucha3.webp');"
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2>LA MAS LINDA</h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- VIDEO  9-->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/0yaC6FS8eBI" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2>REFLEXION</h2>
+          <p>Primer mate en MENDOZA.</p>
+        </div>
+      </div>
+
+
+      <!-- VIDEO  10-->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/WuOi-qxyXIE" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+
+      <!-- VIDEO  11-->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe width="315" height="460" src="https://www.youtube.com/embed/X-cx2xaz7Qo" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2>VISTIMA</h2>
+          <p>QUE TE PASIBA MAMITA???.</p>
+        </div>
+      </div>
+
+
+      <!-- VIDEO 12 -->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/EcN5dh5mu-s" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2>PLAZA</h2>
+          <p>Hermosa plaza y una charla borracha.</p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 17-->
+      <div class="slide active">
+        <div class="media-container">
+          <div 
+            class="image-slide"
+            style="background-image: url('./MULTIMEDIA/DIA1/IMAGENES/17-plaza.webp');"
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2>MUCHOS SUSPIROS POR VOS</h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 18-->
+      <div class="slide active">
+        <div class="media-container">
+          <div 
+            class="image-slide"
+            style="background-image: url('./MULTIMEDIA/DIA1/IMAGENES/18-plaza2.webp');"
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2>MUY LINDO</h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 19-->
+      <div class="slide active">
+        <div class="media-container">
+          <div 
+            class="image-slide"
+            style="background-image: url('./MULTIMEDIA/DIA1/IMAGENES/19-juntos.webp');"
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p>Siempre juntos</p>
+        </div>
+      </div>
+
+      <!-- VIDEO 13 -->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe width="315" height="460" src="https://www.youtube.com/embed/iIy_QSMvKT4" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p>Decime que estas en MENDOZA sin decirme que estas en MENDOZA.</p>
+        </div>
+      </div>
+
+      <!-- VIDEO  -->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe width="636" height="360" src="https://www.youtube.com/embed/xk274SiMfII" title="DIA 1, ASCENSOR" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2>SEXY</h2>
+          <p>MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM.</p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 10-->
+      <div class="slide active">
+        <div class="media-container">
+          <div 
+            class="image-slide"
+            style="background-image: url('./MULTIMEDIA/DIA1/IMAGENES/10\ ascensor.jpeg');"
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 11-->
+      <div class="slide active">
+        <div class="media-container">
+          <div 
+            class="image-slide"
+            style="background-image: url('./MULTIMEDIA/DIA1/IMAGENES/11-ascensor2.jpeg');"
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p>.</p>
+        </div>
+      </div>
+
+      <!-- VIDEO 14 -->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/pZj2xn0sx8M" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2>SIN PALABRAS</h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- VIDEO 15 -->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/nDpWMhXtuJU" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2>SIN PALABRAS</h2>
+          <p>QUE HERMOSA.</p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 12-->
+      <div class="slide active">
+        <div class="media-container">
+          <div 
+            class="image-slide"
+            style="background-image: url('./MULTIMEDIA/DIA1/IMAGENES/12-vista.jpeg');"
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p>PAISAJE.</p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 13-->
+      <div class="slide active">
+        <div class="media-container">
+          <div 
+            class="image-slide"
+            style="background-image: url('./MULTIMEDIA/DIA1/IMAGENES/13-vista2.webp');"
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p>PAISAJE.</p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 14-->
+      <div class="slide active">
+        <div class="media-container">
+          <div 
+            class="image-slide"
+            style="background-image: url('./MULTIMEDIA/DIA1/IMAGENES/14-vista3.jpeg');"
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p>PAISAJE.</p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 15-->
+      <div class="slide active">
+        <div class="media-container">
+          <div 
+            class="image-slide"
+            style="background-image: url('./MULTIMEDIA/DIA1/IMAGENES/16-HERMOSA\ PAISAJE.webp');"
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p>MIRAME, MIRAME, MIRAME.</p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 16-->
+      <div class="slide active">
+        <div class="media-container">
+          <div 
+            class="image-slide"
+            style="background-image: url('./MULTIMEDIA/DIA1/IMAGENES/15-HERMOSA.webp');"
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p>UPS, ME MIRO, Y AHORA?????? JAJAJAJJAJAA.</p>
+        </div>
+      </div>
+
+      <!-- VIDEO 16 -->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/2v8S85_Vgu0" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2>MOZOOOOOO</h2>
+          <p></p>
+        </div>
+      </div>
+
+
+      <!-- VIDEO 17 -->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe width="315" height="460" src="https://www.youtube.com/embed/dT1v9JKiwQ4" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p>Despues de la segunda bodega.</p>
+        </div>
+      </div>
+
+
+      <!-- VIDEO 18 -->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/TjNv8U1UBhQ" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+
+      <!-- VIDEO 19 -->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/NqqON1DWfqI" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p>Volviendo.</p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 20-->
+      <div class="slide active">
+        <div class="media-container">
+          <div 
+            class="image-slide"
+            style="background-image: url('./MULTIMEDIA/DIA1/IMAGENES/20-mamucha.webp');"
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p>.</p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 21-->
+      <div class="slide active">
+        <div class="media-container">
+          <div 
+            class="image-slide"
+            style="background-image: url('./MULTIMEDIA/DIA1/IMAGENES/21-tomando.webp');"
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p>.</p>
+        </div>
+      </div>
+
+       <!-- IMAGEN 22-->
+      <div class="slide active">
+        <div class="media-container">
+          <div 
+            class="image-slide"
+            style="background-image: url('./MULTIMEDIA/DIA1/IMAGENES/22-juntosViñedo.webp');"
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p>.</p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 23-->
+      <div class="slide active">
+        <div class="media-container">
+          <div 
+            class="image-slide"
+            style="background-image: url('./MULTIMEDIA/DIA1/IMAGENES/23-juntosViñedo2.webp');"
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p>.</p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 24-->
+      <div class="slide active">
+        <div class="media-container">
+          <div 
+            class="image-slide"
+            style="background-image: url('./MULTIMEDIA/DIA1/IMAGENES/24-juntosViñedo3.webp');"
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p>.</p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 25-->
+      <div class="slide active">
+        <div class="media-container">
+          <div 
+            class="image-slide"
+            style="background-image: url('./MULTIMEDIA/DIA1/IMAGENES/25-juntosViñedo4.webp');"
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p>.</p>
+        </div>
+      </div>
+
+       <!-- IMAGEN 26-->
+      <div class="slide active">
+        <div class="media-container">
+          <div 
+            class="image-slide"
+            style="background-image: url('./MULTIMEDIA/DIA1/IMAGENES/26-paisajeViñedo.webp');"
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p>.</p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 27-->
+      <div class="slide active">
+        <div class="media-container">
+          <div 
+            class="image-slide"
+            style="background-image: url('./MULTIMEDIA/DIA1/IMAGENES/27-mamuchaviñedo.webp');"
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p>.</p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 28-->
+      <div class="slide active">
+        <div class="media-container">
+          <div 
+            class="image-slide"
+            style="background-image: url('./MULTIMEDIA/DIA1/IMAGENES/28-juntosViñedo5.webp');"
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p>.</p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 29-->
+      <div class="slide active">
+        <div class="media-container">
+          <div 
+            class="image-slide"
+            style="background-image: url('./MULTIMEDIA/DIA1/IMAGENES/29-juntosViñedo6.webp');"
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p>.</p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 30-->
+      <div class="slide active">
+        <div class="media-container">
+          <div 
+            class="image-slide"
+            style="background-image: url('./MULTIMEDIA/DIA1/IMAGENES/30-juntosViñedoPaisaje.webp');"
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p>.</p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 31-->
+      <div class="slide active">
+        <div class="media-container">
+          <div 
+            class="image-slide"
+            style="background-image: url('./MULTIMEDIA/DIA1/IMAGENES/31-viñedoPaisaje.jpeg');"
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p>.</p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 32-->
+      <div class="slide active">
+        <div class="media-container">
+          <div 
+            class="image-slide"
+            style="background-image: url('./MULTIMEDIA/DIA1/IMAGENES/32-juntosViñedo7.webp');"
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p>.</p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 34-->
+      <div class="slide active">
+        <div class="media-container">
+          <div 
+            class="image-slide"
+            style="background-image: url('./MULTIMEDIA/DIA1/IMAGENES/34.juntosViñedo8.webp');"
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p>.</p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 35-->
+      <div class="slide active">
+        <div class="media-container">
+          <div 
+            class="image-slide"
+            style="background-image: url('./MULTIMEDIA/DIA1/IMAGENES/35.mamuchaViñedo.jpeg');"
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p>.</p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 36-->
+      <div class="slide active">
+        <div class="media-container">
+          <div 
+            class="image-slide"
+            style="background-image: url('./MULTIMEDIA/DIA1/IMAGENES/36-mamuchaViñedo2.jpeg');"
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p>.</p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 37-->
+      <div class="slide active">
+        <div class="media-container">
+          <div 
+            class="image-slide"
+            style="background-image: url('./MULTIMEDIA/DIA1/IMAGENES/37-juntosViñedo9.webp');"
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p>.</p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 38-->
+      <div class="slide active">
+        <div class="media-container">
+          <div 
+            class="image-slide"
+            style="background-image: url('./MULTIMEDIA/DIA1/IMAGENES/38-juntosViñedo10.jpeg');"
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p>.</p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 39-->
+      <div class="slide active">
+        <div class="media-container">
+          <div 
+            class="image-slide"
+            style="background-image: url('./MULTIMEDIA/DIA1/IMAGENES/39-viñedo.jpeg');"
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p>.</p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 40-->
+      <div class="slide active">
+        <div class="media-container">
+          <div 
+            class="image-slide"
+            style="background-image: url('./MULTIMEDIA/DIA1/IMAGENES/40-viñedo2.jpeg');"
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p>.</p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 41-->
+      <div class="slide active">
+        <div class="media-container">
+          <div 
+            class="image-slide"
+            style="background-image: url('./MULTIMEDIA/DIA1/IMAGENES/41-viñedo3.jpeg');"
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p>.</p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 42-->
+      <div class="slide active">
+        <div class="media-container">
+          <div 
+            class="image-slide"
+            style="background-image: url('./MULTIMEDIA/DIA1/IMAGENES/42-VolviendoViñedo.jpeg');"
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p>.</p>
+        </div>
+      </div>
+
+      <!-- VIDEO 20 -->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/p705OG2WTbA" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p>.</p>
+        </div>
+      </div>
+
+      <!-- VIDEO 21 -->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/0S0cIdHpHXo" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p>Hermosa habitacion.</p>
+        </div>
+      </div>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <a id="backButton" href="seleccion.html" class="back-button">
+        <i class="fas fa-arrow-left"></i> INICIO
+      </a>
+
+      <!-- Miniaturas de navegación -->
+      <div class="thumbnails-container">
+        <!-- Las miniaturas se generarán automáticamente con JavaScript -->
+      </div>
+
+      <!-- Botones de navegación -->
+      <button class="arrow left-arrow" id="left">
+        <i class="fas fa-arrow-left"></i>
+      </button>
+      <button class="arrow right-arrow" id="right">
+        <i class="fas fa-arrow-right"></i>
+      </button>
+    </div>
+
+    <!-- Controles adicionales -->
+    <div class="controls">
+      
+      <!--       <button id="toggleAutoplay">Autoplay: OFF</button>
+      <button id="toggleTransition">Cambiar transición</button> -->
+    </div>
+
+    <script src="sliderPrevia.js"></script>
+  </body>
 </html>
