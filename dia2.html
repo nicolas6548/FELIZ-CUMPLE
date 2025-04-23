@@ -1,27 +1,2891 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="seleccion.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-</head>
-<body>
-  <h1>DIA 2</h1>
-  <a id="backButton" href="seleccion.html" class="back-button">
-    <i class="fas fa-arrow-left"></i> VOLVER
-  </a>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
 
-  <script>
-    // Obtener el parámetro de la sección de la URL
-    const urlParams = new URLSearchParams(window.location.search);
-    const sectionIndex = urlParams.get('section');
-    
-    // Si hay un parámetro de sección, agregarlo al enlace de volver
-    if (sectionIndex !== null) {
-      document.getElementById('backButton').href = `seleccion.html?section=${sectionIndex}`;
-    }
-  </script>
-</body>
+    <link rel="stylesheet" href="sliderPrevia.css" />
+    <title>Slider con Texto y Videos</title>
+  </head>
+  <body>
+    <div class="slider-container">
+      <!-- VIDEO 1 -->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe
+              width="718"
+              height="404"
+              src="https://www.youtube.com/embed/agjvAVcOvDA"
+              title="DIA2 01 PREVIA HOTEL"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2>¿¿SALIMOS??</h2>
+          <p>Esperando para empezar el segundo dia.</p>
+        </div>
+      </div>
+
+      <!-- VIDEO 2 -->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe
+              width="718"
+              height="404"
+              src="https://www.youtube.com/embed/vg6ZguWLVAc"
+              title="DIA2 02 PREVIA DESAYUNO"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2>SISISISI DESAYUMAMOS Y NOS VAMOS</h2>
+          <p>Fundamental alimentarse antes de salir.</p>
+        </div>
+      </div>
+
+      <!-- VIDEO 3 -->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe
+              width="718"
+              height="404"
+              src="https://www.youtube.com/embed/0ObnBJqtuk8"
+              title="DIA2 03 ESPERANDO COMBI"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2>ESPERANDO LA COMBI</h2>
+          <p>Y decimos boludeces.</p>
+        </div>
+      </div>
+
+      <!-- VIDEO 4 -->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe
+              width="718"
+              height="404"
+              src="https://www.youtube.com/embed/OwFBit45ZA4"
+              title="DIA2 04 VIAJE1"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2>LASTIMA QUE NO VAMOS A LLEGAR</h2>
+          <p>Se ven tan lindas las montañas a lo lejos, ojala pudieramos ir.</p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 1-->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/01-represa/01-juntos/IMG_3022.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2>ME MATAS DE AMOR</h2>
+          <p>.</p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 2-->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/01-represa/01-juntos/IMG_3024.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p>Hay muchas fotos, pero se pusieron algunas.</p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 3-->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/01-represa/01-juntos/IMG_3026.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2>TAN HERMOSA COMO EL PAISAJE</h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 4-->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/01-represa/01-juntos/IMG_3028.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p>Se torcio.</p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 5-->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/01-represa/01-juntos/IMG_3030.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p>Un poquito para el otro lado.</p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 6-->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/01-represa/01-juntos/IMG_3070.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 7-->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/01-represa/01-juntos/IMG_3078.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2>NO HACIA TANTO FRIO, PERO ELLA EXAGERA SIEMPRE</h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 8-->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/01-represa/01-juntos/1.jpeg');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p>
+            Alguien sabia que estabas llendo, para regalarnos ese dia PERFECTO.
+          </p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 9-->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/01-represa/01-juntos/2.jpeg');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 10-->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/01-represa/01-juntos/4.jpeg');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 11-->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/01-represa/01-juntos/5.jpeg');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2>SIN ALIENTO AL VERTE</h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 12-->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/01-represa/02-paisaje/1.jpeg');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2>DESDE ACA EMPIEZAN FOTOS SOLO DEL PAISAJE</h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 13-->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/01-represa/02-paisaje/2.jpeg');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 14-->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/01-represa/02-paisaje/IMG_3035.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 15-->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/01-represa/02-paisaje/IMG_3036.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 16-->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/01-represa/02-paisaje/IMG_3037.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 17-->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/01-represa/02-paisaje/IMG_3038.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 18-->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/01-represa/02-paisaje/IMG_3082.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 19-->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/01-represa/02-paisaje/IMG_3083.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 20-->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/01-represa/02-paisaje/IMG_3084.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 21-->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/01-represa/02-paisaje/IMG_3085.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 22-->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/01-represa/02-paisaje/IMG_3086.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 23-->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/01-represa/02-paisaje/IMG_3111.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 24-->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/01-represa/02-paisaje/IMG_3112.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 25-->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/01-represa/02-paisaje/IMG_3114.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 26-->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/01-represa/02-paisaje/IMG_3115.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 27-->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/01-represa/02-paisaje/IMG_3117.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 28-->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/01-represa/02-paisaje/IMG_3124.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- VIDEO BAILE-->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe
+              width="718"
+              height="404"
+              src="https://www.youtube.com/embed/53VOlXlayX8"
+              title="My Video"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2>NO PUEDO DEJAR DE VERTE</h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 29-->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/01-represa/03-paisaje/1.jpeg');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2>ESTO ES PARA VOS Y POR ESO ACA HAY ALGUNAS FOTOS SOLO TUYAS</h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 30-->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/01-represa/03-paisaje/2.jpeg');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 31-->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/01-represa/03-paisaje/IMG_3039.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 32-->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/01-represa/03-paisaje/IMG_3041.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 33-->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/01-represa/03-paisaje/IMG_3051.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 34-->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/01-represa/03-paisaje/IMG_3052.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 35-->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/01-represa/03-paisaje/IMG_3054.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 36-->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/01-represa/03-paisaje/IMG_3056.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 37-->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/01-represa/03-paisaje/IMG_3060.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 38-->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/01-represa/03-paisaje/IMG_3062.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 39-->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/01-represa/03-paisaje/IMG_3064.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 40-->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/01-represa/03-paisaje/IMG_3066.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 41-->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/01-represa/03-paisaje/IMG_3087.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 42-->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/01-represa/03-paisaje/IMG_3089.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 43-->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/01-represa/03-paisaje//IMG_3090.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 44-->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/01-represa/03-paisaje/IMG_3091.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 45-->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/01-represa/03-paisaje/IMG_3092.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 46-->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/01-represa/03-paisaje/IMG_3094.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 47-->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/01-represa/03-paisaje/IMG_3098.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 48-->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/01-represa/03-paisaje/IMG_3100.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 49-->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/01-represa/03-paisaje/IMG_3102.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 50-->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/01-represa/03-paisaje/IMG_3108.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN 51-->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/01-represa/03-paisaje/IMG_3110.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- VIDEO 5-->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe
+              width="718"
+              height="404"
+              src="https://www.youtube.com/embed/8LU8OS9air0"
+              title="DIA2 05 VIAJE2"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- VIDEO 6-->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe
+              width="718"
+              height="404"
+              src="https://www.youtube.com/embed/yl1bZgiNBfE"
+              title="DIA2 06 VIAJE3"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- VIDEO 7-->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe
+              width="718"
+              height="404"
+              src="https://www.youtube.com/embed/qhnKOZs5Qc4"
+              title="DIA2 07 PARADOR"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- VIDEO 8-->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe
+              width="718"
+              height="404"
+              src="https://www.youtube.com/embed/2n7piL-3BJM"
+              title="DIA2 08 COMBI MATEANDO"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- VIDEO 9-->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe
+              width="718"
+              height="404"
+              src="https://www.youtube.com/embed/5lBYmjzlw3s"
+              title="DIA2 09 COMBI PAISAJE"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- VIDEO 10-->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe
+              width="718"
+              height="404"
+              src="https://www.youtube.com/embed/VFKXEye8t1k"
+              title="DIA2 10 COMBI PAISAJE2"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- VIDEO 11-->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe
+              width="718"
+              height="404"
+              src="https://www.youtube.com/embed/SANBg012O-E"
+              title="DIA2 11 COMBI PAISAJE3"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- VIDEO 12-->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe
+              width="718"
+              height="404"
+              src="https://www.youtube.com/embed/VWpIlUDTs1Y"
+              title="DIA2 12 NIEVE PARADOR"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/02-montaña-nieve/01.jpeg');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2>POR FIN LLEGO LA NIEVE</h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/02-montaña-nieve/02.jpeg');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/02-montaña-nieve/03.jpeg');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/02-montaña-nieve/04.jpeg');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/02-montaña-nieve/05.jpeg');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/02-montaña-nieve/06.jpeg');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/02-montaña-nieve/07.jpeg');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/02-montaña-nieve/08.jpeg');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/02-montaña-nieve/09.jpeg');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/02-montaña-nieve/11.jpeg');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/02-montaña-nieve/12.jpeg');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/02-montaña-nieve/13.jpeg');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/02-montaña-nieve/14.jpeg');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/02-montaña-nieve/15.jpeg');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/02-montaña-nieve/16.jpeg');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/02-montaña-nieve/17.jpeg');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/02-montaña-nieve/18.jpeg');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/02-montaña-nieve/19.jpeg');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/02-montaña-nieve/20.jpeg');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/02-montaña-nieve/21.jpeg');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/02-montaña-nieve/22.jpeg');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/02-montaña-nieve/23.jpeg');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/02-montaña-nieve/24.jpeg');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/02-montaña-nieve/25.jpeg');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/02-montaña-nieve/26.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/02-montaña-nieve/27.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/02-montaña-nieve/28.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/02-montaña-nieve/29.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/02-montaña-nieve/30.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/02-montaña-nieve/31.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/02-montaña-nieve/32.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/02-montaña-nieve/33.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/02-montaña-nieve/34.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- VIDEO -->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe
+              width="718"
+              height="404"
+              src="https://www.youtube.com/embed/Dm4FFE5t6wQ"
+              title="DIA2 13 NIEVE PARADOR2"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- VIDEO -->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe
+              width="718"
+              height="404"
+              src="https://www.youtube.com/embed/t845bE09HNs"
+              title="DIA2 14 MAMU DIABLITA"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- VIDEO -->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe
+              width="718"
+              height="404"
+              src="https://www.youtube.com/embed/MvD3WyCIxWM"
+              title="DIA2 15 PAPU ANGELITO"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- VIDEO -->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe
+              width="362"
+              height="644"
+              src="https://www.youtube.com/embed/H9Poqwyrb4w"
+              title="DIA 2 CULOPATIN"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- VIDEO -->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe
+              width="718"
+              height="404"
+              src="https://www.youtube.com/embed/XCdSRIqU47g"
+              title="DIA2 16 ACONCAHUA"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- VIDEO -->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe
+              width="718"
+              height="404"
+              src="https://www.youtube.com/embed/idhZ175MpdY"
+              title="DIA2 17 ALMUERZO CUENTO CHINO"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- VIDEO -->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe
+              width="718"
+              height="404"
+              src="https://www.youtube.com/embed/_Kuf4pUIKe4"
+              title="DIA2 18 ACONCACHUA2"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/03-puente_del_indio/1.jpeg');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/03-puente_del_indio/2.jpeg');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/03-puente_del_indio/3.jpeg');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2>PUENTE DEL INCA</h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/03-puente_del_indio/4.jpeg');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/03-puente_del_indio/5.jpeg');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/03-puente_del_indio/6.jpeg');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/03-puente_del_indio/IMG_3167.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/03-puente_del_indio/IMG_3170.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/03-puente_del_indio/IMG_3171.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/03-puente_del_indio/IMG_3178.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/03-puente_del_indio/IMG_3181.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/03-puente_del_indio/IMG_3183.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/03-puente_del_indio/IMG_3184.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/03-puente_del_indio/IMG_3185.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/03-puente_del_indio/IMG_3188.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/03-puente_del_indio/IMG_3193.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/03-puente_del_indio/IMG_3197.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/03-puente_del_indio/IMG_3198.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/03-puente_del_indio/IMG_3200.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/03-puente_del_indio/IMG_3208.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/03-puente_del_indio/IMG_3209.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/03-puente_del_indio/IMG_3213.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/03-puente_del_indio/IMG_3218.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/03-puente_del_indio/IMG_3219.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/03-puente_del_indio/IMG_3222.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/03-puente_del_indio/IMG_3229.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- VIDEO -->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe
+              width="699"
+              height="524"
+              src="https://www.youtube.com/embed/fbhhPzP5HxU"
+              title="DIA2 19 PUENTE DEL INCA1"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2>PUENTE DEL INCA</h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- VIDEO -->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe
+              width="362"
+              height="644"
+              src="https://www.youtube.com/embed/mHZ46sHi1sI"
+              title="DIA2 20 PUENTE DEL INCA2"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2>TENES CALOR?</h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- VIDEO -->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe
+              width="362"
+              height="644"
+              src="https://www.youtube.com/embed/0qnNFIrrlF4"
+              title="DIA2 21 PUENTE DEL INCA3"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- VIDEO -->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe
+              width="718"
+              height="404"
+              src="https://www.youtube.com/embed/SAhtOA4CMi4"
+              title="DIA2 22 SALIENDO DE LAS MONTAÑAS"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- VIDEO -->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe
+              width="362"
+              height="644"
+              src="https://www.youtube.com/embed/aQBxR6UXipQ"
+              title="DIA2 23 4GRADOS"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2>4 GRADOS</h2>
+          <p>Y alguien se estaba sacando la ropa jajajajajaja</p>
+        </div>
+      </div>
+
+      <!-- VIDEO -->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe
+              width="718"
+              height="404"
+              src="https://www.youtube.com/embed/5RoAjSSE5SA"
+              title="DIA2 24 MAMU LA LOCA"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- VIDEO -->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe
+              width="362"
+              height="644"
+              src="https://www.youtube.com/embed/CWBL8ootCu4"
+              title="DIA2 25 MAMU CANSADA"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- VIDEO -->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe
+              width="718"
+              height="404"
+              src="https://www.youtube.com/embed/AW3JeOn8tq8"
+              title="DIA2 26 VOLVIENDO AL HOTEL"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/04-mamu/1.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2>DESPUES DE UN DIA MUY LARGO UNA RICA CENA</h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/04-mamu/2.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/04-mamu/3.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/04-mamu/4.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/04-mamu/5.jpeg');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/04-mamu/6.jpeg');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2>QUE SUSTO</h2>
+          <p>
+            Antes de cenar hicimos una videollamada, y muy simpaticamente le
+            dijimos que iban a tener un hermanito. No sale, pero la cara que
+            pusieron fue mortal.
+          </p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/04-mamu/7.jpeg');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/04-mamu/8.jpeg');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/04-mamu/9.jpeg');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/04-mamu/10.jpeg');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- VIDEO -->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe
+              width="718"
+              height="404"
+              src="https://www.youtube.com/embed/YxI0Wm2Vlk0"
+              title="DIA2 27 CENA"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2>QUE LINDO ES SALIR CON VOS, TE AMO</h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- VIDEO -->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe
+              width="362"
+              height="644"
+              src="https://www.youtube.com/embed/mtQE4r1wjIM"
+              title="WhatsApp Video 2022 11 07 at 12 38 39 AM"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/05-prohibido/1.jpeg');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2>HERMOSA</h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/05-prohibido/02.jpeg');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2>SIEMPRE TE VAS A VER BIEN</h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/05-prohibido/IMG_3244.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2>ME CAMBIO???</h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/05-prohibido/IMG_3245.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2>SI, VAMOS A SER VARIOS EN LA CAMA</h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/05-prohibido/IMG_3246.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2>APROVECHEMOS QUE SE DURMIO</h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div
+            class="image-slide"
+            style="
+              background-image: url('/MULTIMEDIA/DIA2/IMAGENES/05-prohibido/IMG_3257.webp');
+            "
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2>SISI, FUE RAPIDITO</h2>
+          <p>Mira tu cara por dios jajajajaja, algo bien hice jajajajaja</p>
+        </div>
+      </div>
+
+      <!-- VIDEO -->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe
+              width="699"
+              height="524"
+              src="https://www.youtube.com/embed/dh46jo-1XYI"
+              title="DIA2 28 NOCHE BUENA"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2>OBVIAMENTE TENIA QUE TERMINAR EL DIA DE LA MEJOR MANERA</h2>
+          <p>Y lo mas rapido posible para ir a mimir.</p>
+        </div>
+      </div>
+
+      <a id="backButton" href="seleccion.html" class="back-button">
+        <i class="fas fa-arrow-left"></i> INICIO
+      </a>
+
+      <script>
+        // Obtener el parámetro de la sección de la URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const sectionIndex = urlParams.get("section");
+
+        // Si hay un parámetro de sección, agregarlo al enlace de volver
+        if (sectionIndex !== null) {
+          document.getElementById(
+            "backButton"
+          ).href = `seleccion.html?section=${sectionIndex}`;
+        }
+      </script>
+
+      <!-- Miniaturas de navegación -->
+      <div class="thumbnails-container">
+        <!-- Las miniaturas se generarán automáticamente con JavaScript -->
+      </div>
+
+      <!-- Botones de navegación -->
+      <button class="arrow left-arrow" id="left">
+        <i class="fas fa-arrow-left"></i>
+      </button>
+      <button class="arrow right-arrow" id="right">
+        <i class="fas fa-arrow-right"></i>
+      </button>
+    </div>
+
+    <!-- Controles adicionales -->
+    <div class="controls">
+      <!--       <button id="toggleAutoplay">Autoplay: OFF</button>
+      <button id="toggleTransition">Cambiar transición</button> -->
+    </div>
+
+    <script src="sliderPrevia.js"></script>
+  </body>
 </html>
