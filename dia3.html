@@ -1,27 +1,409 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="seleccion.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-</head>
-<body>
-  <h1>DIA 3</h1>
-  <a id="backButton" href="seleccion.html" class="back-button">
-    <i class="fas fa-arrow-left"></i> VOLVER
-  </a>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
 
-  <script>
-    // Obtener el parámetro de la sección de la URL
-    const urlParams = new URLSearchParams(window.location.search);
-    const sectionIndex = urlParams.get('section');
-    
-    // Si hay un parámetro de sección, agregarlo al enlace de volver
-    if (sectionIndex !== null) {
-      document.getElementById('backButton').href = `seleccion.html?section=${sectionIndex}`;
-    }
-  </script>
-</body>
+    <link rel="stylesheet" href="sliderPrevia.css" />
+    <title>Slider con Texto y Videos</title>
+  </head>
+  <body>
+    <div class="slider-container">
+
+
+      <!-- VIDEO -->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe width="718" height="395" src="https://www.youtube.com/embed/nrCnNcAzjhA" title="Dia 3 habitacion antes de salir" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2>EMPEZANDO EL DIA 3</h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div 
+            class="image-slide"
+            style="background-image: url('/MULTIMEDIA/DIA3/IMAGENES/01.jpeg');"
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div 
+            class="image-slide"
+            style="background-image: url('/MULTIMEDIA/DIA3/IMAGENES/02.jpeg');"
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div 
+            class="image-slide"
+            style="background-image: url('/MULTIMEDIA/DIA3/IMAGENES/03.jpeg');"
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div 
+            class="image-slide"
+            style="background-image: url('/MULTIMEDIA/DIA3/IMAGENES/04.jpeg');"
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- VIDEO -->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe width="362" height="644" src="https://www.youtube.com/embed/_DatJjYGTzY" title="DIA3 01 DESAYUNO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2>PRIMERO SE DESAYUNA</h2>
+          <p></p>
+        </div>
+      </div>
+
+
+      <!-- VIDEO -->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe width="362" height="644" src="https://www.youtube.com/embed/WNdQ2Rw38e4" title="DIA3 02 DESAYUNO2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+
+      <!-- VIDEO -->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe width="362" height="644" src="https://www.youtube.com/embed/1CcD9AwFfEY" title="DIA3 03 DESAYUNO3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p>No podemos comer tanto en el desayuno</p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div 
+            class="image-slide"
+            style="background-image: url('/MULTIMEDIA/DIA3/IMAGENES/05.webp');"
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- VIDEO -->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe width="718" height="404" src="https://www.youtube.com/embed/k4l7i1HVUNY" title="DIA3 04 CONFESION" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2>EMPEZAMOS EL ULTIMO DIA EN LA PLAZA</h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- VIDEO -->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe width="699" height="524" src="https://www.youtube.com/embed/cp8HRkIflpA" title="DIA3 05 PLAZA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2>QUE LINDO ES PASARLA CON VOS</h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div 
+            class="image-slide"
+            style="background-image: url('/MULTIMEDIA/DIA3/IMAGENES/PLAZA/6.webp');"
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div 
+            class="image-slide"
+            style="background-image: url('/MULTIMEDIA/DIA3/IMAGENES/PLAZA/7.webp');"
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2>HHHHHHHHHHAAAAAAAAAAAAAAAAAAAAAAA</h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div 
+            class="image-slide"
+            style="background-image: url('/MULTIMEDIA/DIA3/IMAGENES/PLAZA/8.webp');"
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div 
+            class="image-slide"
+            style="background-image: url('/MULTIMEDIA/DIA3/IMAGENES/PLAZA/9.webp');"
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2>SIEMPRE PIENSO EN VOS</h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- VIDEO -->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe width="699" height="524" src="https://www.youtube.com/embed/kLaJY_Ieavk" title="DIA3 06 PLAZA2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2>HERMOSA</h2>
+          <p></p>
+        </div>
+      </div>
+      
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div 
+            class="image-slide"
+            style="background-image: url('/MULTIMEDIA/DIA3/IMAGENES/10.webp');"
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div 
+            class="image-slide"
+            style="background-image: url('/MULTIMEDIA/DIA3/IMAGENES/11.webp');"
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div 
+            class="image-slide"
+            style="background-image: url('/MULTIMEDIA/DIA3/IMAGENES/12.webp');"
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+
+      <!-- VIDEO -->
+      <div class="slide">
+        <div class="media-container">
+          <div class="video-slide">
+            <iframe width="718" height="404" src="https://www.youtube.com/embed/JagLJPFSRlY" title="DIA3 07 TURISTAS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2>HACIENDO DE TURISTAS</h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div 
+            class="image-slide"
+            style="background-image: url('/MULTIMEDIA/DIA3/IMAGENES/13.jpeg');"
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div 
+            class="image-slide"
+            style="background-image: url('/MULTIMEDIA/DIA3/IMAGENES/14.jpeg');"
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="slide active">
+        <div class="media-container">
+          <div 
+            class="image-slide"
+            style="background-image: url('/MULTIMEDIA/DIA3/IMAGENES/15.jpeg');"
+            loading="lazy"
+          ></div>
+        </div>
+        <div class="text-container">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+      <a id="backButton" href="seleccion.html" class="back-button">
+        <i class="fas fa-arrow-left"></i> INICIO
+      </a>
+
+      <script>
+        // Obtener el parámetro de la sección de la URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const sectionIndex = urlParams.get("section");
+
+        // Si hay un parámetro de sección, agregarlo al enlace de volver
+        if (sectionIndex !== null) {
+          document.getElementById(
+            "backButton"
+          ).href = `seleccion.html?section=${sectionIndex}`;
+        }
+      </script>
+
+      <!-- Miniaturas de navegación -->
+      <div class="thumbnails-container">
+        <!-- Las miniaturas se generarán automáticamente con JavaScript -->
+      </div>
+
+      <!-- Botones de navegación -->
+      <button class="arrow left-arrow" id="left">
+        <i class="fas fa-arrow-left"></i>
+      </button>
+      <button class="arrow right-arrow" id="right">
+        <i class="fas fa-arrow-right"></i>
+      </button>
+    </div>
+
+    <!-- Controles adicionales -->
+    <div class="controls">
+      <!--       <button id="toggleAutoplay">Autoplay: OFF</button>
+      <button id="toggleTransition">Cambiar transición</button> -->
+    </div>
+
+    <script src="sliderPrevia.js"></script>
+  </body>
 </html>
+
+
+
+
+        
