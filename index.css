@@ -17,6 +17,18 @@ body {
     position: relative;
 }
 
+.bg {
+  background: url('./multimedia/INICIO/IMG_2954.webp')
+    no-repeat center center/cover;
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  width: calc(100vw + 60px);
+  height: calc(100vh + 60px);
+  z-index: -1;
+  filter: blur(0px);
+}
+
 .fullscreen-bg {
     position: fixed;
     top: 0;
