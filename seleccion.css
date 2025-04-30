@@ -66,8 +66,9 @@ body {
 }
 
 button {
-  background-color: #fff;
-  border: none;
+  background-color: transparent;
+  border: solid;
+  border-radius: 25px 25px 25px 25px;
   color: #aaa;
   cursor: pointer;
   font-size: 16px;
@@ -89,13 +90,13 @@ button:focus {
   z-index: 100;
 }
 
-.slider-container .action-buttons .down-button {
+.slider-container .action-buttons .up-button {
   transform: translateX(-100%);
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
 
-.slider-container .action-buttons .up-button {
+.slider-container .action-buttons .down-button {
   transform: translateY(-100%);
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
